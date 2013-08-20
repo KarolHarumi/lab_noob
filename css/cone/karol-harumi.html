@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Desafio CSS - Cone</title>
+
+		<style type="text/css">
+			body{background:#f5f5f5;}
+
+			.cone{
+				background:#e7a535;
+				width:139px;
+				height:139px;
+				margin:150px;
+				-moz-border-radius: 15px;	        
+				-webkit-border-radius: 15px;	         
+				border-radius: 15px;	
+				-moz-box-shadow:2px 2px 0 1px #a5771e;  
+				-webkit-box-shadow:2px 2px 0 1px #a5771e;           
+				box-shadow:2px 2px 0 1px #a5771e;  
+				-moz-transform: rotate(45deg);  
+				-webkit-transform: rotate(45deg);  
+				transform: rotate(45deg); 
+			}
+
+			.cone:before{
+				content: '';
+				width:0;
+				height:0;
+				position: absolute;
+				top:-60px;
+				left:-52px;
+				border-left:85px solid transparent;
+				border-right:85px solid transparent;
+				border-bottom:190px solid #f7b137;
+				-moz-transform:rotate(-45deg);
+				-webkit-transform:rotate(-45deg);
+				transform:rotate(-45deg);
+				-moz-border-radius:85px;
+				-webkit-border-radius:85px;
+				border-radius:85px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="cone"></div>
+	</body>	
+</html>

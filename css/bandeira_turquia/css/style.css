@@ -1,0 +1,32 @@
+body{
+	background:#e30917;
+	margin:0;
+}
+
+.turquia { 
+ 	width:145px;
+	height:145px;
+	background-color:#e30917;
+	margin:112px 0 0 150px;
+
+	-moz-box-shadow: -26px 2px 0 20px #fff;
+	-webkit-box-shadow: -26px 2px 0 20px #fff;
+	box-shadow: -26px 2px 0 20px #fff;
+
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+ }
+
+.turquia:before{
+	content: "★";
+	position: absolute;
+	top: 118px;
+	left: 279px;
+	color: #fff;
+	font-size: 115px;
+
+	-ms-transform:rotate(126deg);
+	-webkit-transform:rotate(126deg);
+	transform:rotate(126deg);
+}

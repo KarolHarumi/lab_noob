@@ -1,0 +1,104 @@
+/*
+* Author: Karol Harumi
+* 04/07/2013
+*/
+
+html, body, #wrapper {height: 100%;}
+
+body{
+	margin: 0;
+	font: 12px Tahoma;
+	color: #262626;
+}
+
+.full{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.hidden{
+	display: none;
+}
+
+/* ==========================================================================
+	Header
+========================================================================== */
+#main-header{
+	display: block;
+	width: 100%;
+	height: 50px;
+	background-color:#0fb7a9;
+}
+
+/* ==========================================================================
+	Nav
+========================================================================== */
+#main-nav{
+	margin-bottom: 50px;
+	background-color: #f6f6f6;
+}
+
+#main-nav ul{
+	margin: 0;
+	display: block;
+	list-style: none;
+	text-align: center;
+	padding: 10px 0;
+}
+
+#main-nav li{
+	display: inline-block;
+	#display: inline;
+	#zoom: 1;
+}
+
+#main-nav a{
+	padding: 5px 20px;
+	background-color: #30c8b9;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#main-nav a:hover{
+	background-color: #27a498;
+}
+
+/* ==========================================================================
+	Content
+========================================================================== */
+#main-content{
+	height:100%;
+}
+
+#main-content .content-left{
+	width: 280px;
+	float: left;
+	margin-right: 20px;
+	background-color: #dedede;
+	padding: 10px;
+	margin-bottom: 50px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+#main-content .content-right{
+	float: right;
+	width: 640px;
+	margin-bottom: 50px;
+}
+
+/* ==========================================================================
+	Footer
+========================================================================== */
+#main-footer{
+	display: block;
+	width: 100%;
+	height: 50px;
+	background-color:#0fb7a9;
+	position: relative;
+	bottom: 0;
+	clear: both;
+	margin-top: -50px;
+}
