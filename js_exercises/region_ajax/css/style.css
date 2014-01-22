@@ -87,7 +87,30 @@ body{
 	float: right;
 	width: 640px;
 	margin-bottom: 50px;
+	position: relative;
 }
+
+/* BOTOES LEGENDA */
+#botoes{
+	width: 25px;
+	position: absolute;
+	bottom: 18px;
+	right: 100px;
+}
+#botoes a{
+	display: block;
+	width: 23px;
+	height: 14px;
+	border: 1px solid #000;
+	text-indent: -999em;
+	margin-bottom: 8px;
+	cursor: pointer;
+}
+#botoes .bt-verde{background: #b4de47;}
+#botoes .bt-laranja{background: #eea933;}
+#botoes .bt-amarelo{background: #f6db54;}
+#botoes .bt-vermelho{background: #e32f11;}
+#botoes .bt-azul{background: #7ca8fa;}
 
 /* ==========================================================================
 	Footer
