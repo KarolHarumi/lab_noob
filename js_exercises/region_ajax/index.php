@@ -31,7 +31,9 @@
 			<section id="main-content">
 				<div class="full">
 					
-					<div id="sidebar" class="content-left"></div>
+					<div class="sidebar">
+						Nenhum conteúdo carregado.
+					</div>
 
 					<div class="content-right">
 						<img src="img/mapa.png" width="681" height="600" border="0" />
@@ -61,8 +63,8 @@
 			// $.getJSON('regioes.json', function(data){
 
 			// 	for(var i = 0; i < data.regioes.length; i++){
-			// 		$('#sidebar').append('<strong>' + data.regioes[i].area + '</strong>' + '<br />');
-			// 		$('#sidebar').append(data.regioes[i].descricao + '<br /><br />');
+			// 		$('.sidebar').append('<strong>' + data.regioes[i].area + '</strong>' + '<br />');
+			// 		$('.sidebar').append(data.regioes[i].descricao + '<br /><br />');
 			// 	}
 				
 			// });
@@ -70,11 +72,11 @@
 			$('#botoes a').click(function(){
 				var i = $('#botoes a').index(this);
 				
-				$("#sidebar").empty();
-				
+				$(".sidebar").empty();
+
 				$.getJSON('regioes.json', function(data){
-					$('#sidebar').append('<strong>' + data.regioes[i].area + '</strong>' + '<br />');
-					$('#sidebar').append(data.regioes[i].descricao + '<br /><br />');
+					$('.sidebar').append(data.regioes[i].area + '<br />');
+					$('.sidebar').append(data.regioes[i].descricao + '<br /><br />');
 				});	
 
 			});
